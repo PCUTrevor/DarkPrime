@@ -1,0 +1,79 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 7, 2017, 11:58:12 AM
+    Author     : PCU
+*/
+
+body{
+    background-color: black;
+    color:white;
+}
+
+.mainBody
+{
+    width:80%;
+    margin:0 auto;
+}
+
+.slideDiv
+{
+    display:none;
+    max-width:500px;
+    height:300px;
+    margin:10px;
+}
+
+.mySlides
+{
+    max-width:500px;
+    max-height:300px;
+}
+
+.headInfo
+{
+    float:right;
+    margin-right:10%
+}
+
+.review
+{
+    width:40%;
+    margin:0 auto;
+}
+
+img
+{
+    width:50%;
+    float:left;
+    margin-left:10%;
+}
+
+table
+{
+    width:80%;
+    
+}
+
+td
+{
+    border:2px solid rgb(138, 38, 164);
+    background-color: rgb(147, 182, 191);
+    font-size:40px;
+    width:20%;
+    text-align:center;
+}
+
+a
+{
+    color:rgb(29,44,126);
+    text-decoration: none;
+}
+
+.vendorForm
+{
+    text-align:center;
+}

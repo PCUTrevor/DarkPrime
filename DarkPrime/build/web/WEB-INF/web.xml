@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="WebApp_ID" version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>ReviewClass</servlet-name>
+        <servlet-class>ReviewClass</servlet-class>
+        <init-param>
+            <param-name>directory</param-name>
+            <param-value>.\Testimonies</param-value>
+        </init-param>
+    </servlet>
+    <servlet>
+        <servlet-name>ReviewForm</servlet-name>
+        <servlet-class>ReviewForm</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ReviewDisplay</servlet-name>
+        <servlet-class>ReviewDisplay</servlet-class>
+        <init-param>
+            <param-name>reviewDirectory</param-name>
+            <param-value>.\Testimonies</param-value>
+        </init-param>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ReviewClass</servlet-name>
+        <url-pattern>/ReviewClass</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ReviewDisplay</servlet-name>
+        <url-pattern>/ReviewDisplay</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>ReviewForm</servlet-name>
+        <url-pattern>/ReviewForm</url-pattern>
+    </servlet-mapping>
+</web-app>

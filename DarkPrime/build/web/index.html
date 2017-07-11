@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Dark Prime Consignment</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .mySlides {display:none;max-height: 450px;max-width: 300px;margin-right: 25px;}
+        </style>
+        <link rel="stylesheet" href="Stylesheets/Index.css">
+        <script type="text/javascript" src="Javascript/Slides.js"></script>
+    </head>
+    <body>
+        <img src="Images/Dark Prime Header.jpg" alt="Dark Prime Header">
+        <div class="headInfo">5800 South 1900 West Roy, Utah<br>Tues - Sat 1-7<br>Sun - Mon By appointment only
+            <br>Follow us:
+            <a href='www.facebook.com/darkprimeconsignment'>Facebook Image</a>
+        </div>
+        
+        <table align='center'>
+            <tr>
+                <td>Home</td>
+                <td><a href='About.html'>About</a></td>
+                <td><a href='Contact.html'>Contact us</a></td>
+                <td><a href='Vendors.html'>Vendors</a></td>
+                <td><a href='/ReviewForm'>Reviews</a></td>
+            </tr>
+        </table>
+        
+        <div class="slideDiv">
+            <img class="mySlides" src="Images/003.JPG" alt="LEGO display">
+            <img class="mySlides" src="Images/004.JPG" alt="Comics display">
+            <img class="mySlides" src="Images/010.JPG" alt="Star Wars figures">
+            <img class="mySlides" src="Images/011.JPG" alt="Magic the Gathering cards">
+            <img class="mySlides" src="Images/015.JPG" alt="Video Games">
+        </div>
+        
+        <div class='mainBody'>Welcome to Dark Prime Consignment. This is the home page, by which you will learn 
+        about the store and what we sell. Here is a test to see if all the text in this box is centered on the
+        page.
+        </div>
+
+    <script>
+        var slideIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none"; 
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {slideIndex = 1} 
+    x[slideIndex-1].style.display = "block"; 
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+    </script>
+    </body>
+</html>
